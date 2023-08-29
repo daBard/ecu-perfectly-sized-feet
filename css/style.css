@@ -1,0 +1,135 @@
+:root {
+    --text-color: #222;
+    --background-color: #cdcdcd;
+    --box-color: #fff;
+    --header-font: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --text-font: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--text-font);
+}
+
+header, nav, main, footer {
+    max-width: 1200px;
+    width: 90vw;
+    background-color: var(--box-color);
+    padding: 2rem 2rem;
+}
+
+header, footer {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo img, .footer-img img {
+    width: 5vw;
+    max-width: 50px;
+    height: auto;
+}
+
+.logo img {
+    margin-right: 1rem;
+}
+
+.header-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-text { 
+    font-size: 3rem;
+    font-family: var(--header-font);
+    text-transform: capitalize;
+}
+
+nav {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.nav-item {
+    padding: 1.5rem 2rem;
+    margin: 0 1rem;
+    background-color: var(--box-color);
+    display: flex;
+    align-items: center;
+    border-radius: .25rem;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-item:hover {
+    box-shadow: 0px 0px 5px var(--text-color);
+    transform: scale(1.1);
+}
+
+.nav-item-text {
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    color: #222;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+#hit {
+    grid-area: hit;
+}
+
+#dit {
+    grid-area: dit;
+}
+
+#bort {
+    grid-area: bort;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hit dit"
+    "bort bort";
+    grid-gap: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content img {
+    object-fit: contain;
+    max-height: 200px;
+}
