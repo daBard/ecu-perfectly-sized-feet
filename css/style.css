@@ -123,13 +123,13 @@ main {
     grid-gap: 2rem;
 }
 
-.content {
+.contents {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.content img {
+.content-wrapper img {
     object-fit: contain;
     max-height: 200px;
 }
