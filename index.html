@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv" data-bs-theme="light">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,66 +9,137 @@
         <meta name="author" content="Ansvarig utgivare">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body class="container-fluid justify-content-center">
-       <header class="container d-flex justify-content-center align-items-center">
-                <img src="/img/foot.png" class="">
-                <h1 class="display-1">Perfectly sized feet</h1>
-       </header>
-
-       <nav class="container nav nav-pills justify-content-center w-75">
-                <a class="nav-link" href="#">Hem</a>
-                <a class="nav-link" href="#hit">Hit</a>
-                <a class="nav-link" href="#dit">Dit</a>
-                <a class="nav-link" href="#bort">Bort</a>
+    
+    <body class="w-100 justify-content-center">
+        <nav class="navbar navbar-expand-lg bg-body sticky-top">
+            <div class="container">
+              <a class="navbar-brand brand bg-white d-flex px-3" href="#">
+                <img src="/img/foot.png" class="rounded me-3 logo">
+                <div>Perfectly<br>sized<br>feet</div>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
         </nav>
-        
-        <main class="container mt-3">
-            <section class="container">
-                <div class="row">
-                    <article id="hit" class="content col-8 card me-3">
-                        <img src="/img/foot.png" class="card-img-top">
-                        <div class="card-body">
-                            <h2 class="card-title">Hit</h2>
-                            <p class="card-text">Man kan springa dit.</p>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet diam a nisl blandit semper. Praesent eget elementum diam, convallis finibus neque. Duis at massa egestas libero varius dignissim. Pellentesque tempus, dolor eget eleifend scelerisque, ligula augue tristique tortor, et maximus odio tellus a metus. Praesent pretium sem sit amet mi semper, ac fringilla augue euismod. Praesent sollicitudin pharetra ultrices. Aliquam sed convallis quam, eget viverra lectus. Etiam mattis lectus nec eros pellentesque, in fringilla ligula placerat. Fusce quis auctor risus. In elementum posuere tempor. Integer luctus elit urna, eu ornare risus tempor eu. In ac ipsum id nulla semper dictum quis vel nunc. Ut odio ex, ultrices non congue ultrices, porttitor vitae dolor. Praesent mattis neque eget risus finibus, vehicula sodales massa ultrices. Nam auctor lectus rhoncus sollicitudin fringilla.</p>
-                        </div>
-                    </article>
-            
-                    <article id="dit"  class="content col card">
-                        <img src="/img/foot.png" class="card-img-top ">
-                        <div class="card-body">
-                                <h2 class="card-title">Dit</h2>
-                                <p class="card-text">Man kan springa dit.</p>
-                                <p class="card-text">Integer urna purus, consectetur eu augue ac, ultricies dapibus urna. Vestibulum commodo dignissim lorem, ut blandit justo lacinia id. Phasellus a massa vulputate, consectetur dolor nec, convallis lacus. Aliquam venenatis dolor luctus, convallis justo non, mollis dui. Suspendisse tincidunt faucibus lorem, et mattis purus. In vel massa sodales, sodales nisl in, tincidunt mauris. Sed dictum aliquet ante vel porta.</p>
-                            </div>
-                            <div class="card-footer">
-                                <p class="card-subtitle">Denna har ett stycke i en footer</p>
-                            </div>
-                        </div>
-                    </article>
+    
+       
+        <!-- <header class="container mt-5 bg-body w-50 py-3">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <img src="/img/foot.png" class="rounded me-4 logo">
+                    <h1 class="display-1">Perfectly sized feet</h1>
                 </div>
-            </section>
+       </header> -->
 
-            <section>
-                <div class="jumbotron jumbotron-fluid">
-                    <article id="bort"  class="container">
-                        <img src="/img/foot.png" class="img-fluid ">
-                        <h2 class="display-4">Bort</h2>
-                        <p class="lead">Man kan springa bort.</p>
-                        <p class="lead">Quisque vestibulum vestibulum justo, ut vulputate eros. Aliquam erat volutpat. Donec bibendum enim eget magna faucibus, et pretium lorem posuere. Duis aliquam mollis magna, sed tincidunt nulla ultrices in. Suspendisse maximus ultricies est quis scelerisque. Phasellus mattis gravida risus ac fermentum. Fusce vestibulum finibus malesuada. Ut placerat consectetur libero, a rutrum orci suscipit vel. Praesent congue enim a aliquet consequat. Mauris et ultricies turpis, vitae sodales ipsum. Curabitur id tincidunt urna.</p>
-                    </article>
+       <!-- <nav class="container nav nav-pills justify-content-around w-50 mt-3">
+                <a class="nav-link bg-light link-dark link-offset-3-hover" href="#">Hem</a>
+                <a class="nav-link bg-light link-dark" href="#hit">Hit</a>
+                <a class="nav-link bg-light link-dark" href="#dit">Dit</a>
+                <a class="nav-link bg-light link-dark" href="#bort">Bort</a>
+        </nav> -->
+        
+        <main class="container">
+          <section class="mt-5">
+            <div class="row row-cols-lg-2 g-4">
+              <article id="hit" class="col-lg">
+                <div class="card">
+                  <img src="/img/Standing_male_feet.jpg" class="card-img-top img-fluid">
+                  <div class="card-body">
+                    <h2 class="card-title">What are feet good for?</h2>
+                    <p class="card-text">Feet are good for a lot of things! Here are some of the most important things that feet do:</p>
+                    <ul class="list-group border-0">
+                      <li class="list-group-item border-0"><span class="fw-bold">Supporting the body:</span> Feet are the foundation of our bodies, and they support our weight every time we take a step.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Absorbing shock:</span> Feet absorb shock when we walk, run, or jump. This helps to protect our joints and spine from injury.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Maintaining balance:</span> Feet help us to maintain our balance when we walk, run, or stand.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Providing sensory feedback:</span> Feet have many nerve endings that send signals to our brains about the surface we are walking on. This helps us to avoid obstacles and to walk safely.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Expressing ourselves:</span> Feet can be used to communicate emotions, such as tapping our feet when we are impatient or crossing our ankles when we are feeling shy.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Promoting relaxation:</span> A foot massage can help to relax the muscles in the feet and legs, and it can also have a calming effect on the mind.</li>
+                    </ul>
+                  </div>
                 </div>
+              </article>
+      
+              <article id="dit"  class="col-lg">
+                <div class="card">
+                  <img src="/img/Standing_male_feet.jpg" class="card-img-top img-fluid">
+                  <div class="card-body">
+                    <h2 class="card-title">Taking care of your feet</h2>
+                    <p class="card-text">Taking care of our feet is important for our overall health and well-being. We can do this by washing our feet regularly, wearing comfortable shoes, and getting regular foot care.</p>
+                    <p>Here are some additional benefits of taking care of your feet:</p>
+                    <ul class="list-group border-0">
+                      <li class="list-group-item border-0"><span class="fw-bold">Reduced risk of foot problems:</span> Taking care of your feet can help to reduce the risk of developing foot problems, such as corns, calluses, and bunions.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Improved circulation:</span> Massaging your feet can help to improve circulation in the feet and legs. This can help to reduce pain and swelling, and it can also help to prevent varicose veins.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Better sleep:</span> A foot massage can help to relax the muscles in the feet and legs, which can make it easier to fall asleep.</li>
+                      <li class="list-group-item border-0"><span class="fw-bold">Increased energy levels:</span> A foot massage can help to improve circulation and reduce stress, both of which can lead to increased energy levels.</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-subtitle">I used Bard for all this useless text</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+            <section class="mt-5">
+                <article class="container rounded bg-body p-3">
+                    <h2 class="display-4">A story about feet that were happy</h2>
+                    <p class="lead">Once upon a time, there was a young penguin named Mumble who lived in the Emperor Penguin colony in Antarctica. Mumble was different from the other penguins in one way: he could not sing. All the other penguins used their singing to attract mates and find their way back to the colony after their annual migration. But Mumble could only tap dance.
+
+                    <p class="lead">At first, Mumble was ashamed of his inability to sing. He tried to hide it from the other penguins, but they eventually found out. They made fun of him and called him names. Mumble was very sad and lonely.
+                      
+                    <p class="lead">One day, Mumble was out exploring when he came across a group of Adelie penguins. The Adelie penguins did not sing, but they communicated with each other through tap dancing. Mumble was amazed. He had never met anyone else who could tap dance.
+                      
+                    <p class="lead">Mumble started hanging out with the Adelie penguins and learned a lot from them. He learned how to tap dance better and how to be more confident in himself. He also learned that it was okay to be different.
+                      
+                    <p class="lead">One day, the Emperor Penguins were about to go on their annual migration. Mumble wanted to go with them, but he knew that they would not let him because he could not sing. So he decided to go on his own.
+                      
+                    <p class="lead">Mumble traveled all over Antarctica, tap dancing and meeting new people. He eventually made his way back to the Emperor Penguin colony. The other penguins were surprised to see him, but they were also happy to have him back.
+                      
+                    <p class="lead">Mumble told the other penguins about his adventures and how he learned to be proud of who he was. The other penguins were inspired by Mumble's story and they started to accept him for who he was.
+                      
+                    <p class="lead">Mumble eventually found a mate, a penguin named Gloria. They had a baby penguin named Erik. Erik could not sing either, but Mumble taught him how to tap dance. Erik eventually became a great tap dancer and he led the Emperor Penguins on their annual migration.
+                      
+                    <p class="lead">Mumble's story is a reminder that it is okay to be different. We should all be proud of who we are and what we can do. We should also be accepting of others, even if they are different from us.</p>
+                </article>          
             </section>
         </main>
         
-        <footer class="container">
-            <div class="footer-img-wrapper">
-                <div class="footer-img">
-                    <img src="/img/foot.png" class="">
-                </div>
+        <footer class="w-100">
+            <div class="w-100 d-flex flex-column align-items-center mt-5 bg-body pt-5">
+                <img src="/img/foot.png" class="img-fluid rounded m-3 logo">
+                <div>Copyright 2023</div>
             </div>
         </footer>
     </body>
