@@ -9,7 +9,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--bs-primary);
-    font-family: myImpact;
+    font-family: "Playfair Display";
     text-transform: capitalize;
 }
 
@@ -19,7 +19,7 @@ html {
 
 body {
     background-color: transparent;
-    --bs-body-font-family: "Open sans", sans-serif;
+    --bs-body-font-family: "Lato", sans-serif;
 }
 
 .brand {
@@ -40,10 +40,8 @@ body {
     --bs-card-border-width: 0;
 }
 
-.card-title, .navbar-brand div {
-    font-family: myImpact;
-}
-
-.navbar-brand div {
+.navbar-brand span {
     text-transform: capitalize;
+    font-family: "Allura";
+    line-height: 1.8rem;
 }

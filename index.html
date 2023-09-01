@@ -30,23 +30,25 @@
         <meta name="theme-color" content="#ffffff">
 
         <!-- FONT -->
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Allura">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato">
 
         <!-- FONTAWESOME -->
         <script src="https://kit.fontawesome.com/3684d119b8.js" crossorigin="anonymous"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="/css/reset.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
     </head>
     
     <body>
-      <nav class="navbar navbar-expand-lg bg-body sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body sticky-top shadow-lg">
           <div class="container">
             <a class="navbar-brand brand bg-body d-flex px-3" href="#">
               <img src="/img/foot.png" class="rounded me-3 logo">
-              <div>Perfectly<br>sized<br>feet</div>
+              <span class="display-6 ">Perfectly<br>sized<br>feet</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -177,10 +179,11 @@
         </main>
         
         <footer>
-            <div class="mt-5 pb-6 pt-3 bg-body">
+            <div class="mt-5 pb-6 pt-3 bg-body shadow-lg">
               <div class="container"> 
                 <div class="row justify-content-center g-3">
-                <div class="col-3 d-flex align-items-start">
+                
+                  <div class="col-lg-3 d-flex align-items-center ps-5 h-100">
                   <ul class="list-group p-3">
                     <li class="list-item lead"><a href="" class="link-body-emphasis link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-75-hover">About</a></li>
                     <li class="list-item lead"><a href="" class="link-body-emphasis link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Contact</a></li>
@@ -188,20 +191,25 @@
                     <li class="list-item lead"><a href="" class="link-body-emphasis link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-75-hover">Feet games</a></li>
                   </ul>
                 </div>
-                <div class="col-5"> 
-                <div class="d-flex justify-content-center align-items-start">
-                  <img src="/img/foot.png" class="rounded m-4 logo">
+
+                <div class="col-lg-3"> 
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <img src="/img/foot.png" class="rounded logo">
+                  </div>
                 </div>
+
+                <div class="col-lg h-100 pe-5">
+                  <div class="h-100 d-flex align-items-center">
+                    <span class="p-3 lead">This entire site is made up bullcrap created as a part of a school project. I used it to learn more about Bootstrap 5, Font Awesome and Google Font API.</span>
+                  </div>
                 </div>
-                <div class="col-3">
-                  <p class="p-3 lead">This entire site is made up bullcrap created as a part of a school project. I useed it to learn more about Bootstrap 5.</p>
-                </div>
-              </div>
-              </div>
-              <div class="d-flex justify-content-center pb-1">
-                <span class="py-1">Copyright 2023</span>
               </div>
             </div>
+            
+            <div class="d-flex justify-content-end pb-1 pe-1">
+              <span class="py-1">Copyright 2023</span>
+            </div>
+          </div>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
