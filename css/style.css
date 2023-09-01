@@ -19,7 +19,7 @@ html {
 
 body {
     background-color: transparent;
-    --bs-body-font-family: Arial, Helvetica, sans-serif;
+    --bs-body-font-family: "Open sans", sans-serif;
 }
 
 .brand {
