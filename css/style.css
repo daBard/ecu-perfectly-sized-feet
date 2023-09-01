@@ -4,7 +4,13 @@
 }
 
 :root {
+    --bs-primary: rgb(93, 121, 121);
+}
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-primary);
+    font-family: myImpact;
+    text-transform: capitalize;
 }
 
 html {
@@ -34,7 +40,7 @@ header, main {
 }
 
 .card {
-    --bs-card-title-color: rgb(93, 121, 121);
+    --bs-card-title-color: var(--bs-primary);
     --bs-card-border-width: 0;
 }
 
